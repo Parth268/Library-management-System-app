@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/strip1"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/relaytive"
+        >
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:src="@drawable/logo"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:id="@+id/relative2"
+            >
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:id="@+id/first"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:padding="15dp"
+           android:background="@drawable/loginbackground"
+           android:layout_height="wrap_content">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="25dp"
+               android:hint="Email or Enrollment"
+               android:background="@null"
+               android:id="@+id/l_email"
+               />
+       </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:id="@+id/second"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:padding="15dp"
+           android:background="@drawable/loginbackground"
+           android:layout_below="@+id/first"
+           android:layout_marginTop="15dp"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="25dp"
+               android:hint="Password"
+               android:background="@null"
+               android:id="@+id/l_password"
+               android:layout_weight="10"
+               android:inputType="textPassword"
+
+               />
+           <Button
+               android:layout_width="40dp"
+               android:layout_height="30dp"
+               android:id="@+id/eyes"
+               android:layout_weight="1"
+               android:background="@drawable/eyesclose"
+               />
+       </LinearLayout>
+
+       <Button
+
+           android:layout_width="match_parent"
+           android:layout_marginTop="15dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/second"
+           android:background="@drawable/backgroundbutton"
+           android:id="@+id/login"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:textColor="@color/white"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="20dp"
+           android:layout_marginTop="15dp"
+           android:layout_marginBottom="10dp"
+           android:layout_below="@+id/login"
+           android:textColor="@color/darkblue"
+           android:layout_marginRight="40dp"
+           android:layout_marginLeft="40dp"
+           android:id="@+id/signup"
+           android:textAlignment="center"
+           android:text="Don't have an account? Sign up "/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
